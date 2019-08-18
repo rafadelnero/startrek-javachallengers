@@ -1,4 +1,4 @@
-package flowcontrol;
+package codeone.challengers;
 
 public class Java12SwitchCaseChallenge {
     public static void main(String... doYourBest) {
@@ -11,19 +11,19 @@ public class Java12SwitchCaseChallenge {
         System.out.println("" + homerBeersTuesday + homerBeersSaturday + homerBeersForNoBeerDay);
     }
 
-     getBeers(WeekDay weekDay) {
+    Object getBeers(WeekDay weekDay) {
         var t = switch ((WeekDay) weekDay) {
-            case MONDAY -> (T) Integer.valueOf(4);
+            case MONDAY -> Integer.valueOf(4);
             case TUESDAY, WEDNESDAY, THURSDAY -> {
                 System.out.println("Every day is beer day for Homer");
                 break (Integer.valueOf(129) == 129 ? 5 : 7);
             }
-            case FRIDAY -> (T) Double.valueOf(4);
-            case SATURDAY, SUNDAY -> (T) "6" == new String("6") ? 2 : 4;
+            case FRIDAY -> Double.valueOf(4);
+            case SATURDAY, SUNDAY -> "6" == new String("6") ? 2 : 4;
             default -> new IllegalStateException("Non existent day.");
         };
 
-        return (T) t;
+        return t;
     }
 
     enum WeekDay {
