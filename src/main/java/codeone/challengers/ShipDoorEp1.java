@@ -1,4 +1,4 @@
-package desafios.autocloseable;
+package codeone.challengers;
 
 public class ShipDoorEp1 implements AutoCloseable {
   public void open() {
