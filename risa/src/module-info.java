@@ -1,5 +1,5 @@
 module risa {
 
-  requires niburi;
+  requires vulcan;
 
 }
