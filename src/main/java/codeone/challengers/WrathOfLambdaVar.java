@@ -1,5 +1,5 @@
 package codeone.challengers;
-//JDK 11 Challenge (still drafting)
+//Planet JDK 11 – Var the Sequel
 public class WrathOfLambdaVar {
     public static void main(String... cetiAlphaSystem){
         System.out.println(new WrathOfLambdaVar().localPlanets());

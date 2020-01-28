@@ -1,6 +1,7 @@
 package codeone.challengers;
-
+//Planet JDK 7 - The Door Malfunction Episode 1
 public class ShipDoorEp1 implements AutoCloseable {
+
   public void open() {
     throw new RuntimeException("Fail to open door.");
   }

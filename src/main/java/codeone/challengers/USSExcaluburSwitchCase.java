@@ -1,5 +1,5 @@
 package codeone.challengers;
-
+//Planet JDK 12 – StarShip Switch
 public class USSExcaluburSwitchCase {
 
     public static void main(String... vulcanRescue) {
@@ -14,10 +14,10 @@ public class USSExcaluburSwitchCase {
         return switch (character) {
             case SPOCK, DATA, JEANLUC, THYLEK, THE_DOCTOR -> {
                 System.out.println("Every day is rescue day");
-                break (Integer.valueOf(129) == 129 ? 10 : 7);
+                yield (Integer.valueOf(129) == 129 ? 10 : 7);
             }
             case MICHAEL_EDDINGTON, WILLIAM_RIKER -> "6" == new String("6") ? 2 : 4;
-            default -> new IllegalStateException("Non existent day.");
+            default -> new IllegalStateException("No survivors.");
         };
     }
 

@@ -1,5 +1,5 @@
 package codeone.challengers;
-//JDK 10 Challenge
+//Planet JDK 10 – Var Turnabout intruder
 public class TurnaboutIntruder {
     public static void main(String... awayTeam){
         System.out.println(new TurnaboutIntruder().whoIsKirk());
