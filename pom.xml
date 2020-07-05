@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>12</java.version>
+        <java.version>14</java.version>
     </properties>
 
     <dependencies>
@@ -37,7 +37,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <release>12</release>
+                    <release>${java.version}</release>
                     <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
