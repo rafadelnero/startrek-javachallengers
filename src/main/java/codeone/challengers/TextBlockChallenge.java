@@ -1,7 +1,11 @@
 package codeone.challengers;
 
+/**
+ * JEP 355: Text Blocks (Preview)
+ * A) Spock  B) Worf     C) Spock                     D) Worf
+ *    true      false       Throws RuntimeException      Throws RuntimeException
+ */
 public class TextBlockChallenge {
-
   public static void main(String... doYourBest) {
     String jediWithoutTextBlock = ""
         + "<html>\n"
