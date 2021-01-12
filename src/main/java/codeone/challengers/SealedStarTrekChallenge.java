@@ -12,7 +12,6 @@ public class SealedStarTrekChallenge {
     default void shoot() { System.out.println("A captain will shoot!"); }
   }
   static non-sealed class Saru implements Captain {} // #A
-
   record Spock(String gun) implements Captain { // #B
     public void shoot() { System.out.println("Spock shoots with:" + gun); }
   }

@@ -16,7 +16,7 @@ public record Commander<T>(T ship, String name, String planet) {
     public static void main(String[] args) {
         Commander<String> commander = new Commander<>("V-ger", "Spock", "Vulcan");
 
-        record NewString(String shipName) {}
+        record NewString(String ship) {}
 
         System.out.println(commander.name);
         System.out.println(commander.equals(new Commander<>(new NewString("V-ger"), "Worf", "Kronos")));

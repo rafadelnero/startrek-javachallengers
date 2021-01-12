@@ -1,4 +1,7 @@
 package codeone.challengers;
+
+import java.util.List;
+
 //Planet JDK 12 – StarShip Switch
 public class USSExcaluburSwitchCase {
 
@@ -12,18 +15,16 @@ public class USSExcaluburSwitchCase {
 
     static Object getVulcanSurvivors(StarTrekCharacters character) {
         return switch (character) {
-            case SPOCK, DATA, JEANLUC, THYLEK, THE_DOCTOR -> {
+            case SPOCK, DATA -> {
                 System.out.println("Every day is rescue day");
                 yield (Integer.valueOf(129) == 129 ? 10 : 7);
             }
-            case MICHAEL_EDDINGTON, WILLIAM_RIKER -> "6" == new String("6") ? 2 : 4;
+            case ELIM_GARAK -> "6" == new String("6") ? 2 : 4;
             default -> new IllegalStateException("No survivors.");
         };
     }
 
-    enum StarTrekCharacters {
-        SPOCK, DATA, JEANLUC, THYLEK, THE_DOCTOR, MICHAEL_EDDINGTON, WILLIAM_RIKER, ELIM_GARAK
-    }
+    enum StarTrekCharacters { SPOCK, DATA, MICHAEL_EDDINGTON, ELIM_GARAK }
 }
 
 
