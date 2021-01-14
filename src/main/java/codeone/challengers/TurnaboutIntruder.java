@@ -32,6 +32,8 @@ public class TurnaboutIntruder {
     private interface Var { String collide(String c1, String c2); }
 }
 
+
+
 /*
   Alternatives:
   a - Compilation error at line 4
