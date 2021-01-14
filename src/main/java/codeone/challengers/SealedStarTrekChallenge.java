@@ -8,28 +8,24 @@ package codeone.challengers;
  * Can't create anonymous inner class from a sealed interface or class.
  */
 public class SealedStarTrekChallenge {
+
   sealed interface Captain permits Spock, Saru {
-    default void shoot() { System.out.println("A captain will shoot!"); }
+    default void giveOrder() {
+      System.out.println("Retrieve!");
+    }
   }
+
   static non-sealed class Saru implements Captain {} // #A
-  record Spock(String gun) implements Captain { // #B
-    public void shoot() { System.out.println("Spock shoots with:" + gun); }
+
+  record Spock(String planetName) implements Captain { // #B
+    public void giveOrder() { System.out.println("Let's go to:" + planetName); }
   }
 
   public static void main(String... doYourBest) {
-    shoot(new Spock("Type-1 Phaser"));
-    shoot(new Saru());
-    shoot((Spock) new Object());
-  }
-
-  static void shoot(Object captain) {
-    if (captain instanceof Spock spock) {
-      spock.shoot();
-    } else if (captain instanceof Saru saru) {
-      saru.shoot();
-    } else {
-      throw new RuntimeException("Unknown instance of Captain");
-    }
+    Captain captain = new Spock("Vulcan");
+    captain.giveOrder();
+    Saru saru = new Saru();// WIP
+    saru.giveOrder();
   }
 }
 
