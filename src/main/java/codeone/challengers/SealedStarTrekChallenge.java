@@ -24,7 +24,7 @@ public class SealedStarTrekChallenge {
   public static void main(String... doYourBest) {
     Captain captain = new Spock("Vulcan");
     captain.giveOrder();
-    Saru saru = new Saru();// WIP
+    Saru saru = new Saru();
     saru.giveOrder();
   }
 }

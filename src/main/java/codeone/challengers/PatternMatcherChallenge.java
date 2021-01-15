@@ -2,13 +2,7 @@ package codeone.challengers;
 
 import java.io.Serializable;
 
-/**
- * Rules
- * Permitted subclass must explicitly extend the sealed class.
- * Permitted subclass must define a modifier: sealed, non-sealed or final.
- * Permitted subclass must belong to the same module to the sealed class.
- * Can't create anonymous inner class from a sealed interface or class.
- */
+
 public class PatternMatcherChallenge {
 
   public static void main(String... doYourBest) {
@@ -20,11 +14,11 @@ public class PatternMatcherChallenge {
 
   static void shoot(Object object) {
     if (object instanceof StringBuffer) {
-      System.out.println(((StringBuffer) object).toString() + ":buffer");
-    } else if (object instanceof Comparable str) {
-      System.out.println(str.equals(11 + "Type-1 Phaser"));
-    } else if (object instanceof Serializable serializable) {
-      System.out.println(serializable.toString() + ":serializable");
+      System.out.println(((StringBuffer) object).append("buffer"));
+    } else if (object instanceof Comparable comparable) {
+      System.out.println(comparable.equals(11 + "Type-1 Phaser"));
+    } else if (object instanceof Serializable) {
+      System.out.println(object.toString() + ":serializable");
     }
   }
 
