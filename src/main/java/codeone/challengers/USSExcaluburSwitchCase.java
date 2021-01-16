@@ -19,7 +19,7 @@ public class USSExcaluburSwitchCase {
                 System.out.println("Every day is rescue day");
                 yield (Integer.valueOf(129) == 129 ? 10 : 7);
             }
-            case ELIM_GARAK -> "6" == new String("6") ? 2 : 4;
+            case MICHAEL_EDDINGTON -> "6" == new String("6") ? 2 : 4;
             default -> new IllegalStateException("No survivors.");
         };
     }
