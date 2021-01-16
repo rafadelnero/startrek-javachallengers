@@ -1,6 +1,6 @@
 package codeone.challengers;
 //Planet JDK 7 - The Door Malfunction Episode 1
-public class ShipDoorEp1 implements AutoCloseable {
+public class ShipDoorChallenge implements AutoCloseable {
 
   public void open() {
     throw new RuntimeException("Fail to open door.");
@@ -12,7 +12,7 @@ public class ShipDoorEp1 implements AutoCloseable {
   }
   
   public static void main(String... doorMalfunction) {
-    try (ShipDoorEp1 shipDoor = new ShipDoorEp1()) {
+    try (ShipDoorChallenge shipDoor = new ShipDoorChallenge()) {
       shipDoor.open();
     } catch (Exception e) {
       System.out.println(e.getMessage());
