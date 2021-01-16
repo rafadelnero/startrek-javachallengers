@@ -7,7 +7,7 @@ public class ShipDoorChallenge implements AutoCloseable {
   }
   
   @Override
-  public void close() throws Exception {
+  public void close() {
     System.out.println("Ship door is closed.");
   }
   
