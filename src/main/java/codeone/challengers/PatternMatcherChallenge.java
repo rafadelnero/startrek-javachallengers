@@ -14,7 +14,7 @@ public class PatternMatcherChallenge {
 
   static void shoot(Object object) {
     if (object instanceof StringBuffer) {
-      System.out.println(((StringBuffer) object).append("buffer"));
+      System.out.println(((StringBuffer) object).append(":buffer"));
     } else if (object instanceof Comparable comparable) {
       System.out.println(comparable.equals(11 + "Type-1 Phaser"));
     } else if (object instanceof Serializable) {
