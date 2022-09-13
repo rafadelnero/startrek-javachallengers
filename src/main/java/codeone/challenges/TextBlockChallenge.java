@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 
 public class TextBlockChallenge {
   public static void main(String... doYourBest) {

@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 //Planet JDK 7 - The Door Malfunction Episode 1
 public class ShipDoorChallenge implements AutoCloseable {
 

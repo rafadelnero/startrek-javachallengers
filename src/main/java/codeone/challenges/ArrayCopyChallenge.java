@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 // Planet JDK 6 - The Cloned Crew
 import java.util.Arrays;
 

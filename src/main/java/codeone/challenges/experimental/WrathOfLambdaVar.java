@@ -1,4 +1,4 @@
-package codeone.challengers.experimental;
+package codeone.challenges.experimental;
 //Planet JDK 11 – Var the Sequel
 public class WrathOfLambdaVar {
     public static void main(String... cetiAlphaSystem){

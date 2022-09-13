@@ -1,6 +1,4 @@
-package codeone.challengers;
-
-import java.util.List;
+package codeone.challenges;
 
 //Planet JDK 12 – StarShip Switch
 public class USSExcaluburSwitchCase {

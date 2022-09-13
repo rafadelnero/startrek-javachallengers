@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 //Planet JDK 6 - The Confused Crew
 
 import java.util.Deque;

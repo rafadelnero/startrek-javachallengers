@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 //Planet JDK 8 - The Doors
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package codeone.challengers;
+package codeone.challenges;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package codeone.challengers.experimental;
+package codeone.challenges.experimental;
 
 /**
  * The code below will compile when we change the following lines:
