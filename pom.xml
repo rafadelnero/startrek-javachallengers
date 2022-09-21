@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+        <java.version>19</java.version>
     </properties>
 
     <dependencies>
@@ -39,8 +39,8 @@
                 <configuration>
                     <release>${java.version}</release>
                     <compilerArgs>--enable-preview</compilerArgs>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>19</source>
+                    <target>19</target>
                 </configuration>
             </plugin>
         </plugins>
