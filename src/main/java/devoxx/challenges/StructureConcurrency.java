@@ -7,14 +7,14 @@ import jdk.incubator.concurrent.StructuredTaskScope;
 public class StructureConcurrency {
 
   public static void main(String[] args) throws ExecutionException, InterruptedException {
-    int result = test1() + test2();
+    String result = getBestCharacter() + getCharacter();
     System.out.println("Result = " + result);
   }
 
-  private static int test1() throws ExecutionException {
-    try (var scope = new StructuredTaskScope.ShutdownOnSuccess<Integer>()) {
-      Future<Integer> f1 = scope.fork(StructureConcurrency::get1);
-      Future<Integer> f2 = scope.fork(StructureConcurrency::get2);
+  private static String getBestCharacter() throws ExecutionException {
+    try (var scope = new StructuredTaskScope.ShutdownOnSuccess<String>()) {
+      Future<String> f1 = scope.fork(StructureConcurrency::getData);
+      Future<String> f2 = scope.fork(StructureConcurrency::getMcCoy);
       scope.join();
       return scope.result();
     } catch (InterruptedException e) {
@@ -22,10 +22,10 @@ public class StructureConcurrency {
     }
   }
 
-  private static int test2() {
+  private static String getCharacter() {
     try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
-      Future<Integer> f1 = scope.fork(StructureConcurrency::get1);
-      Future<Integer> f2 = scope.fork(StructureConcurrency::get2);
+      Future<String> f1 = scope.fork(StructureConcurrency::getData);
+      Future<String> f2 = scope.fork(StructureConcurrency::getMcCoy);
       scope.join();
       return f1.resultNow() + f2.resultNow();
     } catch (InterruptedException e) {
@@ -33,12 +33,12 @@ public class StructureConcurrency {
     }
   }
 
-  private static int get1() throws InterruptedException {
+  private static String getData() throws InterruptedException {
     Thread.sleep(5000);
-    return 1;
+    return "Data ";
   }
 
-  private static int get2() {
-    return 2;
+  private static String getMcCoy() {
+    return "McCoy ";
   }
 }

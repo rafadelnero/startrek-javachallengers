@@ -8,8 +8,8 @@ public class VirtualThreads {
         System.out.println("---------");
         try (ExecutorService e = Executors.newVirtualThreadPerTaskExecutor()) {
             Thread.sleep(2000);
-            e.submit(() -> System.out.println("1"));
-            e.submit(() -> System.out.println("2"));
+            e.submit(() -> System.out.println("Spock"));
+            e.submit(() -> System.out.println("Worf"));
         }
         System.out.println("---------");
     }
